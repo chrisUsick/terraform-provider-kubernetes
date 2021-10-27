@@ -184,6 +184,7 @@ func Provider() *schema.Provider {
 		ResourcesMap: map[string]*schema.Resource{
 			"kubernetes_api_service":                      resourceKubernetesAPIService(),
 			"kubernetes_certificate_signing_request":      resourceKubernetesCertificateSigningRequest(),
+			"kubernetes_certificate_signing_request_v1":   resourceKubernetesCertificateSigningRequestV1(),
 			"kubernetes_cluster_role":                     resourceKubernetesClusterRole(),
 			"kubernetes_cluster_role_binding":             resourceKubernetesClusterRoleBinding(),
 			"kubernetes_config_map":                       resourceKubernetesConfigMap(),
