@@ -179,6 +179,7 @@ func Provider() *schema.Provider {
 			"kubernetes_storage_class":           dataSourceKubernetesStorageClass(),
 			"kubernetes_pod":                     dataSourceKubernetesPod(),
 			"kubernetes_persistent_volume_claim": dataSourceKubernetesPersistentVolumeClaim(),
+			"kubernetes_namespaced_resources":    dataSourceKubernetesNamespacedResources(),
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
